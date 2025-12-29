@@ -1,1 +1,2 @@
-ML model to predict the data is Fraud or not
+
+A machine learning model for credit card fraud detection developed using Python. The classifier used for training the model is Random forest which gives better accuracy. Classification report, Accuracy score and confusion matrix are also implemented. By running the file train_fraud.py which trains the model, fraud_model.pkl file can be generated. The deployment can be completed after then by running the main file app.py
