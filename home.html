@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Fraud Detection</title>
+</head>
+<body>
+
+<h2>🔍 Fraud Transaction Prediction</h2>
+
+<form action="/predict" method="POST">
+
+    Step: <input type="text" name="step" required><br><br>
+
+    Type:
+    <select name="type">
+        <option>PAYMENT</option>
+        <option>TRANSFER</option>
+        <option>CASH_OUT</option>
+        <option>DEBIT</option>
+        <option>CASH_IN</option>
+    </select><br><br>
+
+    Amount: <input type="text" name="amount" required><br><br>
+
+    Old Balance Origin: <input type="text" name="oldbalanceOrg" required><br><br>
+    New Balance Origin: <input type="text" name="newbalanceOrig" required><br><br>
+
+    Old Balance Destination: <input type="text" name="oldbalanceDest" required><br><br>
+    New Balance Destination: <input type="text" name="newbalanceDest" required><br><br>
+
+    <button type="submit">Predict Fraud</button>
+
+</form>
+
+</body>
+</html>
